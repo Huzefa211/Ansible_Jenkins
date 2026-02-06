@@ -12,7 +12,8 @@ pipeline{
                 ansiblePlaybook(
                   playbook: 'ansible/deploy.yaml',
                   inventory: 'ansible/host.ini'
-              )
+                  credentialsId: "${SSH_KEY}"
+                )
       }
     }
   } 
