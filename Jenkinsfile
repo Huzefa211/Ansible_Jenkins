@@ -4,7 +4,7 @@ pipeline{
   stages{
     stage('code') {
       steps {
-        git url:"" , branch: "main"
+        git url:"https://github.com/Huzefa211/Ansible_Jenkins.git" , branch: "main"
       }
     }
        stage('ANSIBLE PLAYBOOK') {
