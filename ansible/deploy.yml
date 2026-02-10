@@ -4,12 +4,6 @@
   become: true
 
   tasks: 
-    - name: Build multi-platform image
-      community.docker.docker_image_build:
-        name: myimage
-        tag: "1"
-        path: /home/ubuntu/workspace/
-    
     - name: run docker container
       docker_container: 
         name: web 
